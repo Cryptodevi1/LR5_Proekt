@@ -1,0 +1,21 @@
+a(name="calculation")
+main
+    section.calculation
+        //button.buy_button_sample Перейти до корзини
+        article.flowers
+            h2 Корзина замовлення
+        form
+        fieldset 
+            legend Додати товар
+            label Ліки
+            select(name="med" id="med")
+                option Ліки1
+                option Ліки2
+            label Кількість
+            input(type="number" name="med_count" id="med_count" min="0" max="50" value="2") 
+            h3(id="price_meds") Вартість
+            button(type="button" id="calc_meds") Додати до замовлення
+        h2 Замовлення
+        h3(id="all_meds") Кількість товарів
+        h3(id="all_price_med") Загальна сума
+        a(href="#").buy_now Сплатити
